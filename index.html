@@ -85,7 +85,7 @@
             <div class="col-md-12 text-center">
                 <h3>We are getting hitched</h3>
                 <p>The date is May 11<sup>th</sup>, 2019 and we would like you to be a part of it.</p>
-                <div class="share-bar"></div>
+                <!--<div class="share-bar"></div>-->
             </div>
         </div>
     </div>
@@ -322,17 +322,17 @@
                             <p><a href="https://goo.gl/maps/vA9zFKTu8Eu">129 N 10th St, Lincoln, NE 68508<a/></p>
                         </div>
                     </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-                        </div>
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
-                                map</a>
-                        </div>
-                    </div>
+                    <!--<div class="row text-center">-->
+                        <!--<div class="col-md-6" style="padding: 5px;">-->
+                            <!--<a class="btn btn-fill btn-small"-->
+                               <!--href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i-->
+                                    <!--class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-6" style="padding: 5px;">-->
+                            <!--<a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show-->
+                                <!--map</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
                 </div>
             </div>
         </div>
@@ -361,7 +361,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h3>What are you waiting for?</h3>
-                <p>We would greatly appreciate if you could RSVP before April 20<sup>th</sub> 2019</p>
+                <p>We would greatly appreciate if you could RSVP before April 20<sup>th</sup> 2019</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
@@ -373,6 +373,7 @@
                                                                      required>
                             </div>
                         </div>
+
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-user"></i><input name="name" class=""
@@ -392,8 +393,8 @@
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
+                                <i class="fa fa-key"></i><input type="text" name="invite_code" id="invite_code"
+                                                                class="" 
                                                                 placeholder="Invite code"
                                                                 required>
                             </div>
@@ -418,7 +419,7 @@
             <div class="col-sm-12 text-center content">
                 <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
                 <p>Modified by JPO with lots of <span class="fa fa-heart pulse2"></span> for Aimee</p>
-                <!--<p>Originally Crafted by Ram with lots of <span class="fa fa-heart pulse2"></span> for Antara</p>-->
+                <p>Original design by <a href="https://github.com/rampatra/wedding-website">Ram</a></p>
             </div>
         </div>
     </div>
@@ -432,8 +433,7 @@
 <script src="js/jquery.mb.YTPlayer.min.js"></script>
 <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
 <script src="js/vendor/ouical.js"></script>
-<script src="js/scripts.min.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
+<script src="js/scripts.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADgLW2Pqt1BlebUeyz8p7nU5TOCUOl9jc&callback=initMap"></script>
 </body>
 </html>
