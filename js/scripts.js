@@ -247,11 +247,13 @@ function initMap() {
 
     var marker = new google.maps.Marker({
         position: fpc,
+        label: "Wedding",
         map: map
     });
 
     var marker = new google.maps.Marker({
         position: grand_manse,
+        label: "Reception",
         map: map
     });
 }
