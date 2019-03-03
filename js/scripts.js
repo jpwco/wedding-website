@@ -238,9 +238,10 @@ $(document).ready(function () {
 function initMap() {
     var fpc = {lat: 40.8051301, lng:-96.6963853};
     var grand_manse = {lat: 40.814337, lng:-96.7098887};
+    var lincoln_center = {lat: 40.811472, lng:-96.702028};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
-        center: fpc,
+        center: lincoln_center,
         scrollwheel: false
     });
 
