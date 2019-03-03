@@ -166,9 +166,15 @@ $(document).ready(function () {
 
 
     /********************** Toggle Map Content **********************/
-    $('#btn-show-map').click(function () {
+    $('#btn-show-map-wedding').click(function () {
         $('#map-content').toggleClass('toggle-map-content');
         $('#btn-show-content').toggleClass('toggle-map-content');
+        centerFPC();
+    });
+    $('#btn-show-map-reception').click(function () {
+        $('#map-content').toggleClass('toggle-map-content');
+        $('#btn-show-content').toggleClass('toggle-map-content');
+        centerManse();
     });
     $('#btn-show-content').click(function () {
         $('#map-content').toggleClass('toggle-map-content');
@@ -245,17 +251,26 @@ function initMap() {
         scrollwheel: false
     });
 
-    var marker = new google.maps.Marker({
+    var fpc_marker = new google.maps.Marker({
         position: fpc,
         label: "Wedding",
         map: map
     });
 
-    var marker = new google.maps.Marker({
+    var manse_marker = new google.maps.Marker({
         position: grand_manse,
         label: "Reception",
         map: map
     });
+
+
+    function centerFPC() {
+      map.setCenter(fpc_marker.getPosition());
+    }
+
+    function centerManse() {
+      map.setCenter(manse_marker.getPosition());
+    }
 }
 
 //function initBBSRMap() {
