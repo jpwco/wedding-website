@@ -166,15 +166,9 @@ $(document).ready(function () {
 
 
     /********************** Toggle Map Content **********************/
-    $('#btn-show-map-wedding').click(function () {
+    $('#btn-show-map').click(function () {
         $('#map-content').toggleClass('toggle-map-content');
         $('#btn-show-content').toggleClass('toggle-map-content');
-        centerFPC();
-    });
-    $('#btn-show-map-reception').click(function () {
-        $('#map-content').toggleClass('toggle-map-content');
-        $('#btn-show-content').toggleClass('toggle-map-content');
-        centerManse();
     });
     $('#btn-show-content').click(function () {
         $('#map-content').toggleClass('toggle-map-content');
@@ -264,13 +258,6 @@ function initMap() {
     });
 
 
-    function centerFPC() {
-      map.setCenter(fpc_marker.getPosition());
-    }
-
-    function centerManse() {
-      map.setCenter(manse_marker.getPosition());
-    }
 }
 
 //function initBBSRMap() {
