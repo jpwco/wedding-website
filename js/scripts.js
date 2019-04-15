@@ -200,7 +200,7 @@ $(document).ready(function () {
             address: '840 S 17th St, Lincoln, NE 68508',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues contact John-Paul Ore at 402.882.2118."
+            description: "RSVP Successful!!!   We can't wait to see you on our big day. For any queries or issues contact John-Paul Ore at 402.882.2118."
         }
     });
 
